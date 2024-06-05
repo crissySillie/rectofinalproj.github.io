@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>News Web</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="News Website Template - Free HTML Templates" name="keywords">
+        <meta content="News Website Template - Free HTML Templates" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet"> 
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="news.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <style>
+            /* Comment Section Styles */
+.comment-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.comment-section h2, .comment-section h3 {
+    margin-bottom: 20px;
+}
+
+.comment-section .form-group {
+    margin-bottom: 15px;
+}
+
+.comment-section .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.comment-section .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comment-section .btn {
+    padding: 10px 20px;
+    background-color: seagreen;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #232023;
+}
+
+.comment-section .btn:hover {
+    background-color: seagreen;
+}
+
+.comment-section #commentsList {
+    margin-top: 30px;
+}
+
+.comment-section .comment {
+    margin-bottom: 20px;
+}
+
+.comment-section .comment p {
+    margin: 0;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .comment-section .form-group {
+        width: 100%;
+    }
+
+    .comment-section .btn {
+        width: 100%;
+    }
+}
+
+        </style>
+        <!-- Top Bar Start -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="tb-contact">
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="tb-menu">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar Start -->
+        
+        <!-- Brand Start -->
+        <div class="brand">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="b-logo">
+                            <a href="index.html">
+                                <img src="newslogo.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-4">
+                        <div class="b-ads">
+                            <a href="">                               
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="b-search">
+                            <input type="text" placeholder="Search">
+                            <button><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Brand End -->
+
+        <!-- Nav Bar Start -->
+        <div class="nav-bar">
+            <div class="container">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="index.html" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <div class="nav-item dropdown">
+                                <div class="dropdown-menu">
+                                </div>
+                            </div>
+                            <a href="newsAbout.html" class="nav-item nav-link">About Us</a>
+                            <a href="newspage.html" class="nav-item nav-link active">Single Page</a>
+                            <a href="newscontact.html" class="nav-item nav-link">Contact Us</a>
+                            <a href="newsFAQ.html" class="nav-item nav-link">FAQ</a>
+                            <a href="Login.html" class="nav-item nav-link">Login</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+        
+      
+        
+        <!-- Single News Start-->
+        <div class="single-news">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="sn-container">
+                            <h1 class="sn-title">Tech Jobs: Meeting Industry's Demands</h1>
+                            <div class="sn-img">
+                                <img src="Techpic.jpg" />
+                            </div>
+                            <div class="sn-content">
+                                <p>The tech industry is in a state of constant evolution, with new advancements and innovations emerging at a rapid pace. This dynamic environment creates a perpetual demand for skilled professionals who can keep up with the latest trends and technologies. As companies strive to stay competitive, they are increasingly seeking out individuals with specialized skills in areas such as artificial intelligence, cybersecurity, data science, and software development.                              
+                                </p>
+                                <p>One of the primary drivers of this demand is the growing reliance on technology across all sectors. Businesses of all sizes are adopting digital solutions to streamline operations, improve customer experiences, and drive growth. This digital transformation requires a workforce that is not only proficient in current technologies but also adaptable enough to learn and implement new ones as they arise.
+                                </p>
+                                <p>Artificial intelligence (AI) and machine learning (ML) are among the most sought-after skills in the tech job market today. Companies are leveraging AI and ML to gain insights from large datasets, automate processes, and enhance decision-making. As a result, there is a high demand for data scientists and AI specialists who can develop and manage these advanced systems.                                   
+                                </p>
+                                <p>Cybersecurity is another critical area where the demand for talent is outpacing supply. With the increasing frequency and sophistication of cyber threats, organizations are investing heavily in cybersecurity measures to protect their data and infrastructure. Cybersecurity experts who can design robust security frameworks and respond to incidents are invaluable assets in today's digitals.</br>                          
+                                </p>
+                                <p>Software development remains a cornerstone of the tech industry, with ongoing demand for developers proficient in various programming languages and frameworks. From web and mobile app development to cloud computing and DevOps, the need for skilled software engineers is ever-present. Companies are particularly interested in developers who can work with agile methodologies and contribute to continuous integration and deployment practices.
+                                </p>
+                                <p>
+                                    To meet these industry demands, educational institutions and training programs are evolving to offer more specialized courses and certifications. Coding bootcamps, online learning platforms, and university programs are increasingly focused on providing practical, hands-on experience with the latest technologies. These educational pathways are crucial for preparing the next generation of tech professionals and ensuring they have the skills needed to succeed in a fast-paced, ever-changing industry.
+                                </p>
+                                <p>
+                                    Moreover, many companies are investing in their existing workforce by offering upskilling and reskilling opportunities. By providing ongoing training and professional development, organizations can retain valuable employees and ensure they remain competitive in the face of technological advancements
+                                </p>
+                                <p>
+                                    In conclusion, the tech industry's demand for skilled professionals is driven by the rapid pace of innovation and the widespread adoption of digital technologies. As businesses continue to navigate this landscape, the need for expertise in areas such as AI, cybersecurity, and software development will remain strong. By investing in education and training, both new entrants and current professionals can equip themselves with the skills necessary to thrive in this dynamic field.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sn-related">
+                            
+                            <div class="row sn-slider">
+                                <div class="col-md-4">
+                                    <div class="sn-img">
+                                        
+                                        <div class="sn-title">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="sn-img">
+                                        
+                                        <div class="sn-title">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="sn-img">
+                                        
+                                        <div class="sn-title">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="sn-img">
+                                        
+                                        <div class="sn-title">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="sidebar">
+                            <div class="sidebar-widget">
+                                <h2 class="sw-title">In This Category</h2>
+                                <div class="news-list">
+                                    <div class="nl-item">
+                                        <div class="nl-img">
+                                            <img src="peanut.jpg" />
+                                        </div>
+                                        <div class="nl-title">
+                                            <a href="">Introducing peanut butter during infancy can help prevent allergies later.</a>
+                                        </div>
+                                    </div>
+                                    <div class="nl-item">
+                                        <div class="nl-img">
+                                            <img src="dessert.jpg" />
+                                        </div>
+                                        <div class="nl-title">
+                                            <a href="">Photographers reveals the wild side of dessert life.</a>
+                                        </div>
+                                    </div>
+                                    <div class="nl-item">
+                                        <div class="nl-img">
+                                            <img src="deer.jpg" />
+                                        </div>
+                                        <div class="nl-title">
+                                            <a href="">Close up photo show the hidden wonders of nature.</a>
+                                        </div>
+                                    </div>
+                                    <div class="nl-item">
+                                        <div class="nl-img">
+                                            <img src="python.jpg" />
+                                        </div>
+                                        <div class="nl-title">
+                                            <a href="">Green tree python was spotted on the park.</a>
+                                        </div>
+                                    </div>
+                                    <div class="nl-item">
+                                        <div class="nl-img">
+                                            <img src="house.jpg" />
+                                        </div>
+                                        <div class="nl-title">
+                                            <a href="">Abondoned house was later on found on the middle of the forest in Austria.</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="sidebar-widget">
+                                <div class="image">                      
+                                </div>
+                            </div>
+                            
+                            <div class="sidebar-widget">
+                                <div class="tab-news">
+                                    <ul class="nav nav-pills nav-justified">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="pill" href="#featured">Featured</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="pill" href="#popular">Popular</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="pill" href="#latest">Latest</a>
+                                        </li>
+                                    </ul>
+
+                                    <div class="tab-content">
+                                        <div id="featured" class="container tab-pane active">
+                                            <div class="tn-news">
+                                                <div class="tn-img">
+                                                    <img src="water-lily.jpg" />
+                                                </div>
+                                                <div class="tn-title">
+                                                    <a href="">The mystique beauty of lotus in the forest lake</a>
+                                                </div>
+                                            </div>
+                                            <div class="tn-news">
+                                                <div class="tn-img">
+                                                    <img src="wedding.jpg" />
+                                                </div>
+                                                <div class="tn-title">
+                                                    <a href="">Famous celebrity got married to his secret girlfriend for 5 years</a>
+                                                </div>
+                                            </div>
+                                            <div class="tn-news">
+                                                <div class="tn-img">
+                                                    <img src="downtown.jpg" />
+                                                </div>
+                                                <div class="tn-title">
+                                                    <a href="">Famous downtown for tourist</a>
+                                                </div>
+                                            </div>
+                                            <div class="tn-news">
+                                                <div class="tn-img">
+                                                    <img src="barbeque.jpg" />
+                                                </div>
+                                                <div class="tn-title">
+                                                    <a href="">A healthy combination of vegetables and meat</a>
+                                                </div>
+                                            </div>
+                                            <div class="tn-news">
+                                                <div class="tn-img">
+                                                    <img src="mushrooms.jpg" />
+                                                </div>
+                                                <div class="tn-title">
+                                                    <a href="">Mysteries of Mushroom, Moss, and Fungi</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="popular" class="container tab-pane fade">
+                                            <div class="tn-news">
+                                                <div class="tn-img">
+                                                    <img src="martial.jpg" />
+                                                </div>
+                                                <div class="tn-title">
+                                                    <a href="">Five year old kid was put on taekwando training</a>
+                                                </div>
+                                            </div>
+                                            <div class="tn-news">
+                                                <div class="tn-img">
+                                                    <img src="cherry-blossoms.jpg" />
+                                                </div>
+                                                <div class="tn-title">
+                                                    <a href="">Locals were dissapointed about tourists touching the cherry-blossoms</a>
+                                                </div>
+                                            </div>
+                                            <div class="tn-news">
+                                                <div class="tn-img">
+                                                    <img src="lantern.jpg" />
+                                                </div>
+                                                <div class="tn-title">
+                                                    <a href="">New famous Chinese-Filipino restaurant found on south negros</a>
+                                                </div>
+                                            </div>
+                                            <div class="tn-news">
+                                                <div class="tn-img">
+                                                    <img src="cat.jpg" />
+                                                </div>
+                                                <div class="tn-title">
+                                                    <a href="">Cute little kitten was rescue by good samaritan</a>
+                                                </div>
+                                            </div>
+                                            <div class="tn-news">
+                                                <div class="tn-img">
+                                                    <img src="young-man.jpg" />
+                                                </div>
+                                                <div class="tn-title">
+                                                    <a href="">Youngest multi-billionaire in the Philippines annonced his engagement</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="latest" class="container tab-pane fade">
+                                            <div class="tn-news">
+                                                <div class="tn-img">
+                                                    <img src="tornado.jpg" />
+                                                </div>
+                                                <div class="tn-title">
+                                                    <a href="">A massive tornado hit the Candida</a>
+                                                </div>
+                                            </div>
+                                            <div class="tn-news">
+                                                <div class="tn-img">
+                                                    <img src="piglet.jpg" />
+                                                </div>
+                                                <div class="tn-title">
+                                                    <a href="">Philippine native pig adopted by a Canadian girl</a>
+                                                </div>
+                                            </div>
+                                            <div class="tn-news">
+                                                <div class="tn-img">
+                                                    <img src="wedding-rings.jpg" />
+                                                </div>
+                                                <div class="tn-title">
+                                                    <a href="">The beliefs of older generation about marriage</a>
+                                                </div>
+                                            </div>
+                                            <div class="tn-news">
+                                                <div class="tn-img">
+                                                    <img src="airport.jpg" />
+                                                </div>
+                                                <div class="tn-title">
+                                                    <a href="">New airport protocols conducted in South Jumerica</a>
+                                                </div>
+                                            </div>
+                                            <div class="tn-news">
+                                                <div class="tn-img">
+                                                    <img src="cosmetics.jpg" />
+                                                </div>
+                                                <div class="tn-title">
+                                                    <a href="">Dangerous chemicals found on luxury brand</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Comment Section Start -->
+<div class="comment-section">
+    <h2>Leave a Comment</h2>
+    <form id="commentForm">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="comment">Comment:</label>
+            <textarea id="comment" class="form-control" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <div id="commentsList">
+        <h3>Comments</h3>
+        <div class="comment">
+            <p><strong>John Doe:</strong> This is interesting topic. Great job!</p>
+        </div>
+    </div>
+</div>
+<!-- Comment Section End -->
+
+                            
+                            
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Single News End-->        
+        
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="title">Get in Touch</h3>
+                            <div class="contact-info">
+                                <p><i class="fa fa-envelope"></i>News.com</p>
+                                <p><i class="fa fa-phone"></i>+098-765-4321</p>
+                                <div class="social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="title">Useful Links</h3>
+                            <ul>
+                                <li><a href="#">News Board Of Directors</a></li>
+                                <li><a href="#">Founding Teams</a></li>                                                         
+                                <li><a href="#">The Team</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="title">Quick Links</h3>
+                            <ul>
+                                <li><a href="#">Customer Support</a></li>
+                                <li><a href="#">Site Map</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="title">News Letter</h3>
+                            <div class="newsletter">
+                                <p>Stay updated with the latest news, articles, and resources, sent to your inbox weekly</p>
+                                <form>
+                                    <input class="form-control" type="email" placeholder="Email...">
+                                    <button class="btn">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+    <!-- Template Javascript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the current page URL
+            var currentPage = window.location.pathname.split("/").pop();
+    
+            // Get all nav links
+            var navLinks = document.querySelectorAll('.nav-item.nav-link');
+    
+            // Loop through each nav link
+            navLinks.forEach(function(link) {
+                // Get the href attribute of the link
+                var linkPage = link.getAttribute('href');
+    
+                // If the href matches the current page URL, add the active class
+                if (linkPage === currentPage) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        });
+    </script>
+    </body>
+</html>

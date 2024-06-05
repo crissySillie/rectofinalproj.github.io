@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .error-container {
+            text-align: center;
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            color: #232023;
+            margin-bottom: 20px;
+        }
+        
+        .error-message {
+            font-size: 1.5rem;
+            color: #333;
+        }
+        
+        .error-link {
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: none;
+            color: seagreen;
+            font-weight: bold;
+            border: 2px solid seagreen;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .error-link:hover {
+            background-color: seagreen;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-code">Oops!</div>
+        <div class="error-message">404. That's an error.</div>
+        <p>The requested URL was not found on this server. That’s all we know.</p>
+        <a href="index.html" class="error-link">GO TO HOMEPAGE</a>
+    </div>
+</body>
+</html>
